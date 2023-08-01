@@ -10,7 +10,7 @@ export function FormAddFriend({ onAddFriend }) {
     const id = crypto.randomUUID();
     const newFriend = {
       name,
-      image: `${image}?=${id}`,
+      image: `${image}?u=${id}`,
       balance: 0,
       id,
     };

@@ -167,3 +167,10 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  margin: -80px 0px 20px 0px;
+}

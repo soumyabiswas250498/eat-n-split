@@ -10,7 +10,8 @@ export function FormSplitBill({ selectedFriend, onSplitBill }) {
   function splitSubmitHandler(e) {
     e.preventDefault();
     if (!bill || !paidUser) return;
-    onSplitBill(whoIsPaying === 'user' ? paidByFriend : -paidUser);
+    // console.log(paidByFriend);
+    onSplitBill(whoIsPaying === 'user' ? paidByFriend : -paidByFriend);
   }
   return (
     <form className="form-split-bill" onSubmit={splitSubmitHandler}>
